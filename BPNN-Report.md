@@ -166,7 +166,7 @@ class BPNN:
     print(bpnn.predict(inputdata, targetdata))
 ```
 2. 测试结果, 损失函数迅速收敛，效果较好，不同的激励函数收敛迭代所需次数有一定差别
-![课件数据测试](slide.png)
+![课件数据测试](picture/slide.png)
 
 * 自定义矩阵数据测试
 1. 测试代码, 两层隐藏层，一层12节点用tanh激活，一层8节点用sigmoid激活，迭代100000次，学习率0.05
@@ -199,9 +199,9 @@ class BPNN:
 ```
 2. 测试结果，不总能收敛，效果不好，有时出现梯度弥散或梯度消失的情况
 * 成功情况
-![succ](succ.png)
+![succ](picture/succ.png)
 * 失败情况
-![fail](failed.png)
+![fail](picture/failed.png)
 * IRIS数据集测试
 1. 测试代码，数据集先用pandas对分类进行二值离散化作为输入
 ```
@@ -234,7 +234,7 @@ class BPNN:
     print(bpnn.predict(inputdata[:5], targetdata[:5]))
 ```
 2. 测试结果，几乎不成功，可能由于我的实现有问题，或者我的参数设定，网络结构问题，或者BPNN网络本身原因，未见收敛情况
-![failed](irisfailed.png)
+![failed](picture/irisfailed.png)
 
 ## 实验感想
 * 人工智能、机器学习等领域如今热火朝天，作为一名软件学院的大学生，学习了解使用相关知识对自己的成长大有裨益。在本次实验对于BPNN网络的实现中，我了解了其背景知识，实现方法等相关知识，查阅了许多相关资料，了解到对于该神经网络的实现细节，加深了我对BPNN的理解。同时，在对不同数据集的测试中发现该网络在使用中并不能很好的投入实践，可能需要调整参数和结构，这也让我意识到要学习更多优化知识，学习更多的模型方法。
